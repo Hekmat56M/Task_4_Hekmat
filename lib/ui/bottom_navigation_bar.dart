@@ -14,7 +14,8 @@ class _MainScreenState extends State<MainScreen> {
   List screenList = [
     const HomeScreen(),
     const ProfileScreen(),
-    SettingScreen(),
+    const SettingScreen(),
+    // MenuScreen(),
   ];
   int currentIndex = 0;
   @override
@@ -34,6 +35,7 @@ class _MainScreenState extends State<MainScreen> {
                 icon: Icon(Icons.person), label: 'Grid View'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.settings), label: 'Form Field'),
+            //BottomNavigationBarItem(icon: Icon(Icons.menu), label: 'API'),
           ],
         ));
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatefulWidget {
-  SettingScreen({super.key});
+  const SettingScreen({super.key});
 
   @override
   State<SettingScreen> createState() => _SettingScreenState();
@@ -37,7 +37,7 @@ class _SettingScreenState extends State<SettingScreen> {
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: Text('Enter no. 1'),
+                          label: const Text('Enter no. 1'),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(12),
                             borderSide: const BorderSide(
@@ -54,7 +54,7 @@ class _SettingScreenState extends State<SettingScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       TextFormField(
@@ -67,7 +67,7 @@ class _SettingScreenState extends State<SettingScreen> {
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: Text('Enter no. 2'),
+                          label: const Text('Enter no. 2'),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(12),
                             borderSide: const BorderSide(
@@ -84,7 +84,7 @@ class _SettingScreenState extends State<SettingScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       IconButton(
@@ -106,8 +106,8 @@ class _SettingScreenState extends State<SettingScreen> {
                               print('This validator is not correct');
                             }
                           },
-                          icon: Icon(Icons.add)),
-                      SizedBox(
+                          icon: const Icon(Icons.add)),
+                      const SizedBox(
                         height: 20,
                       ),
                       Text('Result  =  $result'),
